@@ -1,1 +1,10 @@
-# dotfiles2k23
+# 🔧 Adrian’s dotfiles2k23
+
+Your dotfiles are how you personalize your PC.
+
+Installation
+------------
+```
+$ git clone https://github.com/adrianblade/dotfiles2k23.git && cd dotfiles2k23 && bash install.sh
+```
+
