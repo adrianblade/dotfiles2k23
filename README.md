@@ -1,6 +1,6 @@
 # 🔧 Adrian’s dotfiles2k23
 
-Your dotfiles are how you personalize your PC by me.
+Your dotfiles are how you personalize your PC.
 
 Installation
 ------------
