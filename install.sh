@@ -12,10 +12,33 @@ BPurple='\033[1;35m'      # Purple
 BCyan='\033[1;36m'        # Cyan
 BWhite='\033[1;37m'       # White
 
-echo -e "Installing brew ..."
-. brew.sh
+# Install command-line tools using Homebrew.
 echo -e "Installing brew packages ..."
+if [ ! -f "`which brew`" ]; then
+    echo -e "$BGreen Installing Homebrew $Color_Off"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/adriancataland/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+echo -e "$BBlue Updating Homebrew $Color_Off"
+# Make sure we’re using the latest Homebrew.
+brew update
+
+# Upgrade any already-installed formulae.
+brew upgrade
+
+# Install other useful binaries.
+echo -e "Installing brew packages ..."
+brew install git
+
+# Install other useful apps.
+brew install --cask iterm2
+
+# Remove outdated versions from the cellar.
+brew cleanup
+
 echo -e "Installing terminal customizations ..."
+
 echo -e "Installing sdk-man ..."
-echo -e "Installing zsh ..."    
 
