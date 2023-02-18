@@ -35,6 +35,8 @@ brew install git
 # Install other useful apps.
 brew install --cask iterm2
 brew install --cask visual-studio-code
+brew install --cask docker
+
 # Remove outdated versions from the cellar.
 brew cleanup
 
