@@ -38,6 +38,14 @@ brew install --cask iterm2
 # Remove outdated versions from the cellar.
 brew cleanup
 
+# Link custom dotfiles
+cp .aliases.zsh ~/.aliases.zsh
+cp .zshrc ~/.zshrc
+
+# Link custom dotfiles
+ln -sf ~/workspace/dotfiles2k23/.aliases.zsh ~/.aliases.zsh
+ln -sf ~/workspace/dotfiles2k23/.zshrc ~/.zshrc
+
 echo -e "Installing terminal customizations ..."
 
 echo -e "Installing sdk-man ..."
