@@ -34,19 +34,22 @@ brew install git
 
 # Install other useful apps.
 brew install --cask iterm2
-
+brew install --cask visual-studio-code
 # Remove outdated versions from the cellar.
 brew cleanup
 
 # Link custom dotfiles
 cp .aliases.zsh ~/.aliases.zsh
 cp .zshrc ~/.zshrc
+cp .p10k.zsh ~/.p10k.zsh
 
 # Link custom dotfiles
 ln -sf ~/workspace/dotfiles2k23/.aliases.zsh ~/.aliases.zsh
 ln -sf ~/workspace/dotfiles2k23/.zshrc ~/.zshrc
+ln -sf ~/workspace/dotfiles2k23/.p10k.zsh ~/.p10k.zsh
 
 echo -e "Installing terminal customizations ..."
-
-echo -e "Installing sdk-man ..."
-
+#sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#source ~/.zshrc
+#git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
+#echo "source ~/.powerlevel10k/powerlevel10k.zsh-theme" >>! ~/.zshrc
