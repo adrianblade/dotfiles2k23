@@ -30,12 +30,20 @@ brew upgrade
 
 # Install other useful binaries.
 echo -e "Installing brew packages ..."
+brew install colima
 brew install git
+brew install kubernetes-cli
+brew install llm
+brew install maccy
+brew install nvm
 
 # Install other useful apps.
+brew install --cask container
 brew install --cask iterm2
 brew install --cask visual-studio-code
-brew install --cask docker
+brew install --cask postman
+brew install --cask dbeaver-community
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
