@@ -30,7 +30,7 @@ brew upgrade
 
 # Install other useful binaries.
 echo -e "Installing brew packages ..."
-brew install colima
+brew install awscli
 brew install git
 brew install kubernetes-cli
 brew install llm
